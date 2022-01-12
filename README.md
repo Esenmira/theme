@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://raw.githubusercontent.com/FondationSCP/theme/main/docs/svg/int/scp-logo-fr.min.svg" alt="Logo de la Branche francophone" height="150px">
+   <img src="https://raw.githubusercontent.com/FondationSCP/theme/main/docs/svg/int/scp-logo-fr.min.svg" alt="Logo de la Branche francophone" height="230px">
 </p>
 
 <h2 align="center">Styles du site de la Fondation SCP</h2>
