@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="http://o5command-int.wdfiles.com/local--files/tech-team:main/scp_tt_logo-small.png" alt="Common-Theme" height="150px">
+   <img src="https://raw.githubusercontent.com/FondationSCP/theme/main/docs/svg/int/scp-logo-fr.min.svg" alt="Logo de la Branche francophone" height="150px">
 </p>
 
 <h2 align="center">Styles du site de la Fondation SCP</h2>
@@ -9,10 +9,11 @@
 </p>
 
 Ce thème est destiné à l'usage par le site ; il peut être réutilisé à toutes fins appropriées en accord avec la licence, mais est adapté sur mesure aux besoins de la Fondation SCP au fil du temps. Si vous voulez vous en servir, il est recommandé d'en faire un fork ou une copie locale pour éviter d'hériter automatiquement de changements non désirés.
-<br>
+
 Pour plus d'informations pratiques axées sur l'utilisation du Thème Commun sur lequel celui-ci est basé, consultez le [dépôt de code original](https://github.com/Grombald/Common-Theme/wiki) par Grombald.
 
-**Licence :** Ce thème et la  Common Theme is licensed under [CC BY-SA 3.0 Unported](https://github.com/Grombald/Common-Theme/blob/master/LICENSE.md)<br>
+**Licence :** Ce thème et le Thème Commun sont placés sous la licence [CC BY-SA 3.0 Unported](https://github.com/FondationSCP/theme-du-site/blob/main/LICENSE.md)
+<br>
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>
 
 **Attribution :**
