@@ -1650,6 +1650,24 @@ table.wiki-content-table th {
     text-align: center
 }
 
+/* Infobulle */
+.infobulle {
+    width: 65%;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    border: dashed 2px #999;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+.infobulle.fleches a::before {
+    content: "» ";
+}
+.infobulle.fleches a::after {
+    content: " «";
+}
+
+
 /* Blockquotes and fake Blockquotes */
 blockquote,
 div.blockquote,
@@ -2552,4 +2570,176 @@ div.buttons input:hover, input.button:hover, button:hover, a.button:hover, div.b
     background-color: #f5f5f5;
     background-color: var(--ct_bg_owindow-header);
     color: var(--ct_col_owindow-header);
+}
+
+/* ------------------------------  FR SPECIFICS ------------------------------ */
+
+/* ---------- CHOIX D'UX ---------- */
+
+/* Largeur page */
+#content-wrap {
+    max-width: max(1130px, 72vw);
+}
+
+/* Saut ligne auto pour collapsibles */
+.collapsible-block-link {
+    line-break: anywhere;
+}
+
+/* Création de compte moins contre-intuitive */
+.login-status-create-account, .login-status-create-account+span  {
+    display: none;
+}
+.login-status-sign-in::after {
+    content: " comme utilisateur Wikidot"
+}
+.content.modal-body p:last-of-type::after {
+    content: " Si vous pensez que cette erreur n'est pas normale, vous pouvez venir nous voir sur Discord."
+}
+
+/* Votes en colonnes */
+#who-rated-page-area h2 {
+    margin: .5em 0 0.75em;
+}
+#who-rated-page-area div {
+    columns: 12rem auto;
+    line-height: 1.125rem;
+}
+
+/* Icônes de liens */
+#thread-container .post a::after {
+    content: " ";
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    transition: 0.2s;
+}
+#thread-container .post a:hover::after {
+    transform: scale(1.1);
+}
+
+#thread-container .post a[href^="http://sandboxscpfr.wikidot.com"]::after {
+    background-image: url(http://fondationscp.wdfiles.com/local--files/component%3Atheme/sandbox.svg);
+    background-size: 15px;
+    width: 14px;
+    height: 14px;
+    margin-left: 1px;
+}
+#thread-container .post a[href^="http://commandemento5.wikidot.com"]::after {
+    background-image: url(http://fondationscp.wdfiles.com/local--files/component%3Atheme/o5.svg);
+    background-size: 15px;
+    width: 18px;
+    height: 13px;
+}
+#thread-container .post a[href^="http://scp-int.wikidot.com"]::after,
+#thread-container .post a[href^="http://scp-wiki-cn.wikidot.com"]::after,
+#thread-container .post a[href^="http://scp-cs.wikidot.com"]::after,
+#thread-container .post a[href^="scp-wiki.wikidot.com"]::after,
+#thread-container .post a[href^="scpwiki.com"]::after,
+#thread-container .post a[href^="scp-wiki.net"]::after,
+#thread-container .post a[href^="http://scp-wiki-de.wikidot.com"]::after,
+#thread-container .post a[href^="http://fondazionescp.wikidot.com"]::after,
+#thread-container .post a[href^="http://scp-jp.wikidot.com"]::after,
+#thread-container .post a[href^="http://ko.scp-wiki.net"]::after,
+#thread-container .post a[href^="http://scpko.wikidot.com"]::after,
+#thread-container .post a[href^="http://scp-wiki.net.pl"]::after,
+#thread-container .post a[href^="http://scp-pt-br.wikidot.com"]::after,
+#thread-container .post a[href^="http://scpfoundation.net"]::after,
+#thread-container .post a[href^="http://lafundacionscp.wikidot.com"]::after,
+#thread-container .post a[href^="http://scp-th.wikidot.com"]::after,
+#thread-container .post a[href^="http://scp-zh-tr.wikidot.com"]::after,
+#thread-container .post a[href^="http://scp-ukrainian.wikidot.com"]::after,
+#thread-container .post a[href^="http://scp-vn.wikidot.com"]::after​ ​{
+    background-image: url(http://fondationscp.wdfiles.com/local--files/component%3Atheme/int.svg);
+ ​   background-size: 14px;
+    width: 16px;
+    height: 14px;
+    margin-left: 0.5px;
+}
+
+#thread-container .post .content a[href*="//"]:not([href*="sandboxscpfr.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="commandemento5.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-int.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki-cn.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-cs.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scpwiki.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki.net"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki-de.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="fondazionescp.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-jp.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="ko.scp-wiki.net"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scpko.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki.net.pl"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-pt-br.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scpfoundation.net"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="lafundacionscp.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-th.wikidot.com"])::after, 
+#thread-container .post .content a[href*="//"]:not([href*="scp-zh-tr.wikidot.com"])::after, 
+#thread-container .post .content a[href*="//"]:not([href*="scp-ukrainian.wikidot.com"])::after, 
+#thread-container .post .content a[href*="//"]:not([href*="scp-vn.wikidot.com"])::after {
+   background-image: url(http://fondationscp.wdfiles.com/local--files/component%3Atheme/externe.svg);
+}
+
+/* Notice d'info affichage pubs */
+script + div.page-tags:before {
+    color: #888;
+    content: "Connectez-vous à votre compte pour ne plus voir de publicités";
+    display: block;
+    font-size: 77%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Accessibilité largeur intermédiaire */
+@media (min-width: 580px) and (max-width: 766px) { 
+  #top-bar {
+      display: flex;
+      justify-content: space-evenly;
+  }
+}
+
+/* Classes NdM */
+.pastille.blanc {
+    color: white;
+    text-shadow: -1px 1px 0 #000,
+     1px 1px 0 #000,
+     1px -1px 0 #000,
+     -1px -1px 0 #000;
+}
+.pastille.bleu { color: blue }
+.pastille.vert { color: green }
+.pastille.jaune { color: yellow }
+.pastille.orange { color: orange }
+.pastille.rouge { color: red }
+.pastille.noir { color: black }
+
+---------- /* FIXES*/ ----------
+
+/* Flèche sidebar même couleur que liens */
+.topbar_arrow, .c_topbar_arrow {
+    color: var(--ct_col_topbar-link) !important;
+}
+
+/* Fond flèche sidebar même couleur que fond liens */
+.topbar_arrow, .c_topbar_arrow,
+.topbar_arrow:hover, .c_topbar_arrow:hover {
+    background-color: transparent;
+}
+
+/* Retrait décalage à droite */
+@media only screen and (max-width: 384px) {
+  #top-bar .mobile-top-bar ul li:nth-of-type(2) ul {
+      right: 0;
+  }
+}
+
+/* Exposants & indices */
+sup, sub {
+    line-height: 100%;
+}
+
+/* Hauteur footnote */
+.footnoteref, #page-content>sup {
+    top: 0;
 }
