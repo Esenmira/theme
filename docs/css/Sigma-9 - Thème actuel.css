@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url('https://grombald.github.io/Common-Theme/font/font-bauhaus.css');
+@import url('http://scp-int.wdfiles.com/local--code/credit:style/1');
 @import url('https://grombald.github.io/Common-Theme/font/font-awesome.min.css');
 
  /*
@@ -535,6 +535,10 @@ div#container-wrap {
     padding-bottom: 10px;
     padding-top: 10px;
     text-decoration: none;
+}
+#top-bar .top-bar > ul > li > a,
+#top-bar .mobile-top-bar > ul > li > a {
+    font-weight: bold;
 }
 #top-bar ul li ul {
     border: solid 1px #666;
