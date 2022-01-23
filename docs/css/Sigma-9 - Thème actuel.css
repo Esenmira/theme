@@ -154,12 +154,12 @@ Legend:
     --ct_col_page-title: var(--ct_col_h1-txt);
     --ct_col_page-title-border: #bbb;
         
-    /* 4 Rating-module */
+    /* 4 Rating module */
     --ct_col_rate-primary: #633;
     --ct_brd_rate-primary: solid 1px var(--ct_col_rate-primary);
     --ct_col_rate-secondary: #fff6f0;
     --ct_col_rate-cancel: #966;
-    --ct_col_rate-link-hover: #fffff0;
+    --ct_col_rate-link-hover: #c99;
     --ct_col_rate-border-heritage: #ccc066;
     --ct_dim_rate-border-radius: 5px;
         --ct_dim_rate-cancel-border-radius: -moz-calc(var(--ct_dim_rate-border-radius) - 2px);
@@ -1160,13 +1160,9 @@ table.page-files tr.highlight td:not(:last-child) {
  
 /* ---------------- #4.1 Rating module ---------------- */
 .page-rate-widget-box {
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
     border-radius: 5px;
     border-radius: var(--ct_dim_rate-border-radius);
-        -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-        -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 1px 3px rgba(0 0 0 / 50%);
     display: inline-block;
     margin-bottom: 10px;
     margin-right: 2em;
@@ -1176,8 +1172,6 @@ table.page-files tr.highlight td:not(:last-child) {
     background: var(--ct_col_rate-primary) !important;
     border: solid 1px #633;
     border: var(--ct_brd_rate-primary);
-        -webkit-border-radius: 5px 0 0 5px;
-        -moz-border-radius: 5px 0 0 5px;
     border-radius: 5px 0 0 5px;
     border-radius: var(--ct_dim_rate-border-radius) 0 0 var(--ct_dim_rate-border-radius);
     border-right: 0;
@@ -1214,8 +1208,6 @@ table.page-files tr.highlight td:not(:last-child) {
     border: solid 1px #633;
     border: var(--ct_brd_rate-primary);
     border-left: 0;
-        -webkit-border-radius: 0 5px 5px 0;
-        -moz-border-radius: 0 5px 5px 0;
     border-radius: 0 5px 5px 0;
     border-radius: 0 var(--ct_dim_rate-border-radius) var(--ct_dim_rate-border-radius) 0;
 }
@@ -1228,12 +1220,64 @@ table.page-files tr.highlight td:not(:last-child) {
 .page-rate-widget-box .cancel a:hover {
     background: #633;
     background: var(--ct_col_rate-primary);
-        -webkit-border-radius: 0 3px 3px 0;
-        -moz-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
     border-radius: 0 var(--ct_dim_rate-cancel-border-radius) var(--ct_dim_rate-cancel-border-radius) 0;
     color: var(--ct_col_rate-link-hover);
     text-decoration: none;
+}
+
+/* Adaptations FR */
+.rate-box-with-credit-button {
+    background: transparent !important;
+    box-shadow: none;
+    border: none;
+}
+.page-rate-widget-box {
+    background: #633 !important;
+    background: var(--ct_col_rate-primary) !important;
+    box-shadow: 1px 1px 3px rgba(0 0 0 / 50%) !important;
+}
+ 
+.rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0 5px 5px 0;
+    border: var(--ct_brd_rate-primary);
+    border-left: none;
+}
+.rate-box-with-credit-button .page-rate-widget-box .cancel a:hover {
+    color: var(--ct_col_rate-link-hover);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.rate-box-with-credit-button .page-rate-widget-box .rate-points {
+    border: var(--ct_brd_rate-primary);
+    border-right: none;
+    top: 0;
+}
+ 
+.rate-box-with-credit-button .creditButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 16px;
+    background-color: #633;
+    background-color: var(--ct_col_rate-primary);
+    border: 1px solid #633;
+    border: var(--ct_brd_rate-primary);
+    border-radius: 5px;
+    border-radius: var(--ct_dim_rate-border-radius);
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+.creditButton a {
+    width: 24px;
+    margin-left: 0;
+    border-left: none;
+    font-size: 11px;
+}
+.creditButton a:hover {
+    color: var(--ct_col_rate-link-hover);
 }
  
 /* Heritage Rating module */
