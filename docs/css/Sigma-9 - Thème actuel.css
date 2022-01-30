@@ -1159,6 +1159,9 @@ table.page-files tr.highlight td:not(:last-child) {
 }
  
 /* ---------------- #4.1 Rating module ---------------- */
+.rate-box-with-credit-button a:hover {
+    text-decoration: none;
+}
 .page-rate-widget-box {
     border-radius: 5px;
     border-radius: var(--ct_dim_rate-border-radius);
@@ -1200,7 +1203,6 @@ table.page-files tr.highlight td:not(:last-child) {
     background: var(--ct_col_rate-primary);
     color: #fffff0;
     color: var(--ct_col_rate-link-hover);
-    text-decoration: none;
 }
 .page-rate-widget-box .cancel {
     background: #633;
@@ -1223,10 +1225,8 @@ table.page-files tr.highlight td:not(:last-child) {
     border-radius: 0 3px 3px 0;
     border-radius: 0 var(--ct_dim_rate-cancel-border-radius) var(--ct_dim_rate-cancel-border-radius) 0;
     color: var(--ct_col_rate-link-hover);
-    text-decoration: none;
 }
 
-/* Adaptations FR */
 .rate-box-with-credit-button {
     background: transparent !important;
     box-shadow: none;
