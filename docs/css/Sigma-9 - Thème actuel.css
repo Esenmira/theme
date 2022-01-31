@@ -836,8 +836,8 @@ div#container-wrap {
         -webkit-box-shadow: var(--ct_shd_sidebar-block);
         -moz-box-shadow: var(--ct_shd_sidebar-block);
     box-shadow: var(--ct_shd_sidebar-block);
-    margin-bottom: 15px;
-    padding: 10px;
+    margin-bottom: 1.125rem;
+    padding: 0.7rem;
 }
 #side-bar .side-block.blue,
 #side-bar .side-block.media {
@@ -1085,6 +1085,7 @@ div#container-wrap {
 
 /* Above the content */
 #content-wrap {
+    width: clamp(1070px,60vw,1200px);
     height: auto !important;
     height: 1500px;
     margin: 2em auto 0;
@@ -2624,11 +2625,6 @@ div.buttons input:hover, input.button:hover, button:hover, a.button:hover, div.b
 /* ------------------------------  FR SPECIFICS ------------------------------ */
 
 /* ---------- CHOIX D'UX ---------- */
-
-/* Largeur page */
-#content-wrap {
-    max-width: clamp(1130px,65vw,1300px);
-}
 
 /* Saut ligne auto pour collapsibles */
 .collapsible-block-link {
