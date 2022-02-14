@@ -210,7 +210,7 @@ Legend:
     --ct_shd_m_sidebar-button: 0 0 20px 3px rgba(153,153,153,1);
     
     /* 9 Off-page styling */
-    --ct_bg_hovertip: var(--ct_bg_body);
+    --ct_bg_hovertip: #f3f3f3;
     --ct_col_hovertip: var(--ct_col_body-txt);
     --ct_brd_hovertip: solid 1px black;
     --ct_bg_input: var(--ct_bg_body);
