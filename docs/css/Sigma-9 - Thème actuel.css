@@ -1104,7 +1104,7 @@ div#container-wrap {
 
 /* Above the content */
 #content-wrap {
-    width: clamp(1070px,60vw,1200px);
+    max-width: clamp(1070px,60vw,1200px);
     height: auto !important;
     height: 1500px;
     margin: 2em auto 0;
