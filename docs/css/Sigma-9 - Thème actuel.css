@@ -84,7 +84,7 @@ Legend:
     --ct_col_header-txt: #eee;
     --ct_col_slogan-txt: #f0f0c0;
     --ct_shd_header-txt: 3px 3px 5px #000;
-    --ct_shd_slogan-txt: 1px 1px 1px rgba(0,0,0,.8);
+    --ct_shd_slogan-txt: 1px 1px 1px rgba(0 0 0 / .8);
     --ct_fns_header-txt: 180%;
     --ct_fns_slogan-txt: 100%;
     
@@ -100,7 +100,7 @@ Legend:
     --ct_col_searchbox-txt: #ccc;
     --ct_brd_searchbox-border: solid 1px #999;
     --ct_col_searchbox-highlight: #fff;
-    --ct_brd_searchbox-highlight: solid 1px var(--ct_col_searchbox-highlight);
+    --ct_brd_searchbox-highlight: solid 1px var(--ct_col_searchbox-highlight, #fff);
     --ct_col_searchbox-gradient-1: #300;
     --ct_col_searchbox-gradient-2: #633;
     --ct_col_searchbox-gradient-3: #966;
@@ -114,8 +114,8 @@ Legend:
     --ct_bg_topbar-item-highlight: #fff;
     --ct_brd_topbar-menu: solid 1px #666;
     --ct_brd_topbar-menu-hover: solid 1px #ddd;
-    --ct_brd_topbar-item: solid 1px rgba(64,64,64,.1);
-    --ct_brd_topbar-item-hover: solid 1px rgba(64,64,64,1);
+    --ct_brd_topbar-item: solid 1px rgba(64 64 64 / .1);
+    --ct_brd_topbar-item-hover: solid 1px rgba(64 64 64 / 1);
     --ct_bg_topbar-home: url('https://grombald.github.io/Common-Theme/img/home_fff.png');
     --ct_bg_topbar-home: url('https://grombald.github.io/Common-Theme/svg/home_fff.svg');
     --ct_bg_topbar-home-hover: url('https://grombald.github.io/Common-Theme/img/home.png');
@@ -123,7 +123,7 @@ Legend:
     --ct_bg_open-menu-button: url('https://grombald.github.io/Common-Theme/svg/open-menu-button.svg');
     
     /* 2 Sidebar */
-    --ct_shd_sidebar-block: 0 2px 6px rgba(102,0,0,.5);
+    --ct_shd_sidebar-block: 0 2px 6px rgba(102 0 0 / .5);
     --ct_col_sidebar-elements: #600;
     --ct_brd_sidebar-elements: 1px solid var(--ct_col_sidebar-elements);
     --ct_bg_sidebar-default: #fff;
@@ -162,11 +162,7 @@ Legend:
     --ct_col_rate-link-hover: #c99;
     --ct_col_rate-border-heritage: #ccc066;
     --ct_dim_rate-border-radius: 5px;
-        --ct_dim_rate-cancel-border-radius: -moz-calc(var(--ct_dim_rate-border-radius) - 2px);
-        --ct_dim_rate-cancel-border-radius: -webkit-calc(var(--ct_dim_rate-border-radius) - 2px);
     --ct_dim_rate-cancel-border-radius: calc(var(--ct_dim_rate-border-radius) - 2px);
-        --ct_dim_rate-heritage-border-radius: -moz-calc(var(--ct_dim_rate-border-radius) + 3px);
-        --ct_dim_rate-heritage-border-radius: -webkit-calc(var(--ct_dim_rate-border-radius) + 3px);
     --ct_dim_rate-heritage-border-radius: calc(var(--ct_dim_rate-border-radius) + 3px);
     
     /* 4 Standard image block */
@@ -207,27 +203,27 @@ Legend:
     --ct_brd_m_sidebar-right: 1px solid #936b6b;
     --ct_col_m_sidebar-button-bg: #fff;
     --ct_brd_m_sidebar-button: .2em solid #888;
-    --ct_shd_m_sidebar-button: 0 0 20px 3px rgba(153,153,153,1);
+    --ct_shd_m_sidebar-button: 0 0 20px 3px rgba(153 153 153 / 1);
     
     /* 9 Off-page styling */
     --ct_bg_hovertip: #f3f3f3;
-    --ct_col_hovertip: var(--ct_col_body-txt);
+    --ct_col_hovertip: var(--ct_col_body-txt, #333);
     --ct_brd_hovertip: solid 1px black;
     --ct_bg_input: var(--ct_bg_body);
-    --ct_col_input: var(--ct_col_body-txt);
+    --ct_col_input: var(--ct_col_body-txt, #333);
     --ct_brd_input: 1px solid #777;
     --ct_brd_input-outline: 1px solid black;
     --ct_bg_btn: #f4f4f4;
-    --ct_col_btn: var(--ct_col_body-txt);
+    --ct_col_btn: var(--ct_col_body-txt, #333);
     --ct_brd_btn: 1px solid #aaa;
     --ct_bg_btn-hover: #ddd;
     --ct_col_btn-hover: var(--ct_col_btn);
     --ct_bg_edit-info-text: #f3f3f3;
     --ct_brd_edit-info-text: 1px solid #ccc;
-    --ct_bg_owindow: var(--ct_bg_body);
+    --ct_bg_owindow: var(--ct_bg_body, #fff);
     --ct_brd_owdindow: 2px solid #bbb;
     --ct_bg_owindow-header: #f5f5f5;
-    --ct_col_owindow-header: var(--ct_col_body-txt);
+    --ct_col_owindow-header: var(--ct_col_body-txt, #333);
 
     /* SVG URLs (stored here not to clutter the rest when line wrap is on) */
     --ct_bg_topbar-home-hover: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cg%20transform%3D%22matrix(3.7795%200%200%203.7795%20-1.4376e-8%20-1114)%22%3E%0A%3Cpath%20d%3D%22m0.39178%20296.54%201.328-1.2608%201.328%201.2608h-0.40197v1.1204h-0.52917v-0.79375h-0.79375v0.79375h-0.52917v-1.1204z%22%20fill%3D%22%23b01%22%20fill-opacity%3D%22.8%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E");
