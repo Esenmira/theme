@@ -2296,6 +2296,29 @@ div.buttons input:hover, input.button:hover, button:hover, a.button:hover, div.b
     transform: scale(1.1);
 }
 
+#thread-container .post .content a[href*="//"]:not([href*="sandboxscpfr.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="commandemento5.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-int.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki-cn.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-cs.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scpwiki.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki.net"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki-de.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="fondazionescp.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-jp.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="ko.scp-wiki.net"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scpko.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-wiki.net.pl"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-pt-br.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scpfoundation.net"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="lafundacionscp.wikidot.com"])::after,
+#thread-container .post .content a[href*="//"]:not([href*="scp-th.wikidot.com"])::after, 
+#thread-container .post .content a[href*="//"]:not([href*="scp-zh-tr.wikidot.com"])::after, 
+#thread-container .post .content a[href*="//"]:not([href*="scp-ukrainian.wikidot.com"])::after, 
+#thread-container .post .content a[href*="//"]:not([href*="scp-vn.wikidot.com"])::after {
+   background-image: url(http://fondationscp.wdfiles.com/local--files/component%3Atheme/externe.svg);
+}
 #thread-container .post a[href^="http://sandboxscpfr.wikidot.com"]::after {
     background-image: url(http://fondationscp.wdfiles.com/local--files/component%3Atheme/sandbox.svg);
     background-size: 15px;
@@ -2333,30 +2356,6 @@ div.buttons input:hover, input.button:hover, button:hover, a.button:hover, div.b
     width: 16px;
     height: 14px;
     margin-left: 0.5px;
-}
-
-#thread-container .post .content a[href*="//"]:not([href*="sandboxscpfr.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="commandemento5.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-int.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-wiki-cn.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-cs.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-wiki.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scpwiki.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-wiki.net"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-wiki-de.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="fondazionescp.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-jp.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="ko.scp-wiki.net"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scpko.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-wiki.net.pl"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-pt-br.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scpfoundation.net"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="lafundacionscp.wikidot.com"])::after,
-#thread-container .post .content a[href*="//"]:not([href*="scp-th.wikidot.com"])::after, 
-#thread-container .post .content a[href*="//"]:not([href*="scp-zh-tr.wikidot.com"])::after, 
-#thread-container .post .content a[href*="//"]:not([href*="scp-ukrainian.wikidot.com"])::after, 
-#thread-container .post .content a[href*="//"]:not([href*="scp-vn.wikidot.com"])::after {
-   background-image: url(http://fondationscp.wdfiles.com/local--files/component%3Atheme/externe.svg);
 }
 
 /* Notice d'info affichage pubs */
