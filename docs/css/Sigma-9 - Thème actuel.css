@@ -2,7 +2,14 @@
 
 @import url('http://fondationscp.wdfiles.com/local--code/credit:style/1');
 @import url('https://grombald.github.io/Common-Theme/font/font-awesome.min.css');
-@import url('https://grombald.github.io/Common-Theme/font/font-bauhaus.css');
+
+@font-face {
+    font-family: 'Sans-Normalcy';
+    src: url('https://fondationscp.github.io/theme/fonts/normalcy.woff') format('woff'),
+           url('https://fondationscp.github.io/theme/fonts/normalcy.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
  /*
     SCP Sigma 9 - Common Theme 1.3
@@ -80,13 +87,13 @@ Legend:
     --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/svg/body_bg.svg');
     --ct_bg_header-logo: url('https://grombald.github.io/Common-Theme/img/logo.png');
     --ct_bg_header-logo: url('https://grombald.github.io/Common-Theme/svg/header-logo.svg');
-    --ct_fnt_header-txt: BauhausLTDemi, Arial, sans-serif;
+    --ct_fnt_header-txt: Sans-Normalcy, Arial, sans-serif;
     --ct_col_header-txt: #eee;
     --ct_col_slogan-txt: #f0f0c0;
     --ct_shd_header-txt: 3px 3px 5px #000;
     --ct_shd_slogan-txt: 1px 1px 1px rgba(0 0 0 / .8);
-    --ct_fns_header-txt: 180%;
-    --ct_fns_slogan-txt: 100%;
+    --ct_fns_header-txt: clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem);
+    --ct_fns_slogan-txt: clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem);
     
     /* 2 Account menu */
     --ct_col_account-menu-txt: #aaa;
@@ -327,9 +334,9 @@ div#container-wrap {
     display: block;
     background: transparent;
     color: var(--ct_col_header-txt, #eee);
-    font-family: BauhausLTDemi, Arial, sans-serif;
-    font-family: var(--ct_fnt_header-txt, BauhausLTDemi, Arial, sans-serif);
-    font-size: var(--ct_fns_header-txt, 180%);
+    font-family: Sans-Normalcy, Arial, sans-serif;
+    font-family: var(--ct_fnt_header-txt, Sans-Normalcy, Arial, sans-serif);
+    font-size: var(--ct_fns_header-txt, clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem));
     letter-spacing: .9px;
     line-height: 0;
     margin: 0;
@@ -355,7 +362,7 @@ div#container-wrap {
 #header h2 span {
     color: var(--ct_col_slogan-txt, #f0f0c0);
     display: block;
-    font-size: var(--ct_fns_slogan-txt, 100%);
+    font-size: var(--ct_fns_slogan-txt, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
     font-weight: bold;
     line-height: 0;
     margin: 0;
@@ -1955,9 +1962,6 @@ img, embed, video, object, iframe, table,
 
 /* ---------------- #7.2 Note Media Query (Up to 580px device width) ---------------- */
 @media (max-width: 580px) {
-    :root {
-        --ct_fns_header-txt: 120%;
-    }
     blockquote,
     div.blockquote,
     div.curved {
@@ -1969,9 +1973,6 @@ img, embed, video, object, iframe, table,
     }
     #header h1, #header h2 {
         margin-left: 80px;
-    }
-    #header h1 a {
-        font-size: var(--ct_fns_header-txt, 120%);
     }
     #header,
     .mobile-top-bar {
@@ -2015,9 +2016,6 @@ img, embed, video, object, iframe, table,
  
 /* ---------------- #7.3 Mobile Media Query (Up to 479px device width) ---------------- */
 @media (max-width: 479px) {
-    :root {
-        --ct_fns_header-txt: 100%;
-    }
     table.form td, table.form th {
         float: left;
         padding: 0;
@@ -2033,9 +2031,6 @@ img, embed, video, object, iframe, table,
     }
     #header h1, #header h2 {
         margin-left: 66px;
-    }
-    #header h1 a {
-        font-size: var(--ct_fns_header-txt, 100%);
     }
     .mobile-top-bar {
         padding: 0;
@@ -2102,18 +2097,12 @@ img, embed, video, object, iframe, table,
 
 /* ---------------- #7.5 Mini Tablet Media Query (581px - 767px device width) ---------------- */
 @media (min-width: 581px) and (max-width: 767px) {
-    :root {
-        --ct_fns_header-txt: 140%;
-    }
     #header {
         background-position: 1em 4em;
         background-size: 77px 77px;
     }
     #header h1, #header h2 {
         margin-left: 93px;
-    }
-    #header h1 a {
-        font-size: var(--ct_fns_header-txt, 140%);
     }
     #header, .mobile-top-bar {
         max-width: 90%;
@@ -2143,9 +2132,6 @@ img, embed, video, object, iframe, table,
  
 /* ---------------- #7.6 Tablet Media Query (768px - 979px device width) ---------------- */
 @media (min-width: 768px) and (max-width: 979px) {
-    :root {
-        --ct_fns_header-txt: 160%;
-    }
     #header {
         background-position: 1em 4em;
             -webkit-background-size: 88px 88px;
@@ -2157,9 +2143,6 @@ img, embed, video, object, iframe, table,
     }
     #header h1, #header h2 {
         margin-left: 106px;
-    }
-    #header h1 a {
-        font-size: var(--ct_fns_header-txt, 160%);
     }
     #top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
         width: 150px;
