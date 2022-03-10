@@ -26,9 +26,10 @@ et le Thème Commun par Dr_Grom (https://github.com/Grombald/Common-Theme)
 
 Extensions :
 - Font Awesome 4.3.0 par @davegandy sous SIL OFL 1.1 (police) et licence MIT (CSS)
-- Compatibilité avec les languea asiatiques par Nanimono Demonai
+- Compatibilité avec les langues asiatiques par Nanimono Demonai
 - Module interwiki par Resure
 - Module de crédit par C-take, physicslike, sinazugawa et Nanimono Demonai, amélioré par Dr Devan et Boyu12, adapté par Dr_Grom, Mafiew et Lekter
 - Colmod par Boyu12
 - Fichiers SVG passés en URL avec l'outil de 7happy7 http://smlt.wikidot.com/7happy7:svg-replace
+- Police Sans Normalcy par EstrellaYoshte sous licence OFL 1.1
 ```
