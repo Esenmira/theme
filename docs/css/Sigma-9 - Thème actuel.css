@@ -94,7 +94,8 @@ Legend:
     --ct_shd_slogan-txt: 1px 1px 1px rgba(0 0 0 / .8);
     --ct_fns_header-txt: clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem);
     --ct_fns_slogan-txt: clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem);
-    
+    /* @link https://utopia.fyi/type/calculator?c=320,21,1.333,1140,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
     /* 2 Account menu */
     --ct_col_account-menu-txt: #aaa;
     --ct_col_account-menu-link: #ddd;
@@ -349,7 +350,7 @@ div#container-wrap {
 #header h1 a::before {
     color: var(--ct_col_alt-header-txt);
     content: var(--ct_cnt_alt-header-txt);
-    font-size: var(--ct_fns_alt-header-txt);
+    font-size: var(--ct_cnt_alt-header-txt);
 }
 #header h2 {
     clear: left;
@@ -1312,12 +1313,20 @@ table.wiki-content-table th {
     padding: 0.5rem 1rem;
 }
 .alternate:nth-child(even) {
-    background-color: rgba(255 255 255 / .9);
+    background-color: rgba(255 255 255 / 90%);
     border-top: solid 1px #eeeee0;
     border-bottom: solid 1px #eeeee0;
 }
 .content-panel .panel-body.alt-container {
     padding: 0;
+}
+
+/* Cadre */
+
+.cadre {
+    border: 1px solid rgba(0 0 0 / 70%);
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgba(0 0 0 / 40%);
 }
 
 /* White-paper */
