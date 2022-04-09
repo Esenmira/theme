@@ -73,6 +73,16 @@ Legend:
 */ 
 
 :root {
+    /* 0 Fluid typescales */
+    --step--2: clamp(0.63rem, calc(0.78rem + -0.22vw), 0.74rem);
+    --step--1: clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem);
+    --step-0: clamp(1.31rem, calc(1.34rem + -0.12vw), 1.25rem);
+    --step-1: clamp(1.75rem, calc(1.74rem + 0.04vw), 1.77rem);
+    --step-2: clamp(2.33rem, calc(2.27rem + 0.33vw), 2.50rem);
+    --step-3: clamp(3.11rem, calc(2.94rem + 0.83vw), 3.53rem);
+    --step-4: clamp(4.14rem, calc(3.81rem + 1.66vw), 5.00rem);
+    --step-5: clamp(5.52rem, calc(4.92rem + 3.01vw), 7.07rem);
+
     /* 1 Common */
     --ct_bg_body: #fff;
     --ct_col_body-txt: #333;
@@ -92,8 +102,8 @@ Legend:
     --ct_col_slogan-txt: #f0f0c0;
     --ct_shd_header-txt: 3px 3px 5px #000;
     --ct_shd_slogan-txt: 1px 1px 1px rgba(0 0 0 / .8);
-    --ct_fns_header-txt: clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem);
-    --ct_fns_slogan-txt: clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem);
+    --ct_fns_header-txt: var(--step-2, clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem));
+    --ct_fns_slogan-txt: var(--step--1, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
     /* @link https://utopia.fyi/type/calculator?c=320,21,1.333,1140,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 
     /* 2 Account menu */
