@@ -1324,6 +1324,9 @@ table.wiki-content-table th {
 /* Cadre */
 
 .cadre {
+    width: 95%;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
     border: 1px solid rgba(0 0 0 / 70%);
     border-radius: 8px;
     box-shadow: 1px 1px 2px rgba(0 0 0 / 40%);
