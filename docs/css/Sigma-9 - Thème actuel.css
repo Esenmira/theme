@@ -131,7 +131,7 @@ Legend:
     --ct_bg_open-menu-button: url('https://grombald.github.io/Common-Theme/svg/open-menu-button.svg');
     
     /* 2 Sidebar */
-    --ct_shd_sidebar-block: 0 2px 6px rgba(102 0 0 / .5);
+    --ct_shd_sidebar-block: 0 2px 6px rgba(102 0 0 / 50%);
     --ct_col_sidebar-elements: #600;
     --ct_brd_sidebar-elements: 1px solid var(--ct_col_sidebar-elements);
     --ct_bg_sidebar-default: #fff;
@@ -211,7 +211,7 @@ Legend:
     --ct_brd_m_sidebar-right: 1px solid #936b6b;
     --ct_col_m_sidebar-button-bg: #fff;
     --ct_brd_m_sidebar-button: .2em solid #888;
-    --ct_shd_m_sidebar-button: 0 0 20px 3px rgba(153 153 153 / 1);
+    --ct_shd_m_sidebar-button: 0 0 20px 3px rgb(153 153 153);
     
     /* 9 Off-page styling */
     --ct_bg_hovertip: #f3f3f3;
@@ -348,9 +348,9 @@ div#container-wrap {
     text-shadow: var(--ct_shd_header-txt);
 }
 #header h1 a::before {
-    color: var(--ct_col_alt-header-txt);
     content: var(--ct_cnt_alt-header-txt);
-    font-size: var(--ct_cnt_alt-header-txt);
+    color: var(--ct_col_alt-header-txt);
+    font-size: var(--ct_fns_alt-header-txt);
 }
 #header h2 {
     clear: left;
@@ -372,8 +372,8 @@ div#container-wrap {
     text-shadow: var(--ct_shd_slogan-txt, 1px 1px 1px rgba(0 0 0 / .8));
 }
 #header h2 span::before {
-    color: var(--ct_col_alt-slogan-txt);
     content: var(--ct_cnt_alt-slogan-txt);
+    color: var(--ct_col_alt-slogan-txt);
     font-size: var(--ct_fns_alt-slogan-txt);
 }
 
