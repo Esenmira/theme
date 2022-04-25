@@ -73,7 +73,9 @@ Legend:
 */ 
 
 :root {
-    /* 0 Fluid typescales */
+    /* 0 Fluid typescales
+    @link https://utopia.fyi/type/calculator?c=320,21,1.333,1140,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
     --step--2: clamp(0.63rem, calc(0.78rem + -0.22vw), 0.74rem);
     --step--1: clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem);
     --step-0: clamp(1.31rem, calc(1.34rem + -0.12vw), 1.25rem);
@@ -104,7 +106,6 @@ Legend:
     --ct_shd_slogan-txt: 1px 1px 1px rgba(0 0 0 / .8);
     --ct_fns_header-txt: var(--step-2, clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem));
     --ct_fns_slogan-txt: var(--step--1, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
-    /* @link https://utopia.fyi/type/calculator?c=320,21,1.333,1140,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 
     /* 2 Account menu */
     --ct_col_account-menu-txt: #aaa;
@@ -264,7 +265,7 @@ Legend:
 body {
     background: var(--ct_bg_body, #fff);
     color: var(--ct_col_body-txt, #333);
-    font-size: .80em;
+    font-size: 0.8em;
 }
 h1 {
     color: var(--ct_col_h1-txt, #901);
