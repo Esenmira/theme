@@ -1,7 +1,10 @@
 @charset "utf-8";
 
-@import url('http://fondationscp.wdfiles.com/local--code/credit:style/1');
-@import url('https://grombald.github.io/Common-Theme/font/font-awesome.min.css');
+/*
+@import url("http://fondationscp.wdfiles.com/local--code/credit:style/1");
+*/
+@import url("https://raw.githubusercontent.com/FondationSCP/module-de-credit/main/src/css/credit-min.css");
+@import url("https://grombald.github.io/Common-Theme/font/font-awesome.min.css");
 
 @font-face {
     font-family: 'Sans-Normalcy';
@@ -16,13 +19,14 @@
     [2021 Wikidot Theme - CC BY-SA 3.0]
     Based on the SCP Sigma 9 theme by Aelanna, Crayne, Dr Devan, anqxyr, DrMagnus and psdnbluesoul
     Common Theme by Dr_Grom
+    Adapted and modified for the French branch by Dr Lekter
     https://github.com/Grombald/Common-Theme
     
     Extensions:
     - Font Awesome 4.3.0 by @davegandy under SIL OFL 1.1 (Font) and MIT License (CSS)
     - Support for Asian languages by Nanimono Demonai
     - Interwiki-module by Resure
-    - Credit-module by C-take, physicslike, sinazugawa Nanimono Demonai, improved by Dr Devan and Boyu12, and adapted Dr_Grom
+    - Credit-module by C-take, physicslike, sinazugawa Nanimono Demonai, improved by Dr Devan and Boyu12, adapted by Dr_Grom and Archiviste n° 585
     - Colmod by Boyu12
     - SVGs url-ified with 7happy7's http://smlt.wikidot.com/7happy7:svg-replace
 */
@@ -266,6 +270,9 @@ body {
     background: var(--ct_bg_body, #fff);
     color: var(--ct_col_body-txt, #333);
     font-size: 0.8em;
+}
+#interwiki body {
+	background-color: transparent;
 }
 h1 {
     color: var(--ct_col_h1-txt, #901);
@@ -658,7 +665,10 @@ div#container-wrap {
     top: .5em;
     width: 17em;
 }
-#side-bar .side-block {
+#interwiki .side-block {
+	margin: 5px;
+}#side-bar .side-block,
+#interwiki .side-block {
     background: var(--ct_bg_sidebar-default, #fff);
     border: var(--ct_brd_sidebar-elements, 1px solid #600);
     border-radius: var(--ct_dim_sidebar-border-radius, 10px);
@@ -666,6 +676,7 @@ div#container-wrap {
     margin-bottom: 1.125rem;
     padding: 0.7rem;
 }
+
 #side-bar .side-block.blue,
 #side-bar .side-block.media {
     background: var(--ct_bg_sidebar-blue, #e5e5ff);
@@ -683,7 +694,8 @@ div#container-wrap {
 #side-bar .side-area {
     padding: 10px;
 }
-#side-bar .heading {
+#side-bar .heading,
+#interwiki .heading {
     border-bottom: var(--ct_brd_sidebar-elements, solid 1px #600);
     color: var(--ct_col_sidebar-elements, #600);
     font-size: 8pt;
@@ -692,14 +704,17 @@ div#container-wrap {
     margin-bottom: 5px;
     padding-left: 15px;
 }
-#side-bar p {
+#side-bar p,
+#interwiki p {
     margin: 0;
 }
-#side-bar div.menu-item {
+#side-bar .menu-item,
+#interwiki .menu-item {
     margin: 2px 0;
     padding-left: 15px;
 }
-#side-bar div.menu-item img {
+#side-bar .menu-item img,
+#interwiki .menu-item img {
     bottom: -2px;
     border: 0;
     height: 13px;
@@ -708,27 +723,31 @@ div#container-wrap {
     position: relative;
     width: 13px;
 }
-#side-bar div.menu-item a {
+#side-bar .menu-item a,
+#interwiki .menu-item a {
     font-weight: bold;
 }
-#side-bar div.menu-item a img {
+#side-bar .menu-item a img {
     padding: 0 7px;
 }
-#side-bar div.menu-item.inactive img {
+#side-bar .menu-item.inactive img {
     opacity: .25;
 }
-#side-bar div.menu-item.inactive a {
+#side-bar .menu-item.inactive a,
+.scpnet-interwiki-wrapper .menu-item.inactive a {
     color: #999;
 }
-#side-bar div.menu-item .sub-text {
+#side-bar .menu-item .sub-text,
+.scpnet-interwiki-wrapper .menu-item .sub-text {
     color: #666;
     color: var(--ct_col_sidebar-subtext);
     font-size: 80%;
 }
-#side-bar a:visited { 
+#side-bar a:visited,
+#interwiki a:visited { 
     color: var(--ct_col_link);
 }
-#side-bar ul{
+#side-bar ul {
     list-style-type: none;
     padding: 0 5px 0;
 }
@@ -959,6 +978,10 @@ table.page-files tr.highlight td:not(:last-child) {
 }
  
 /* ---------------- #4.1 Rating module ---------------- */
+.rate-box-with-credit-button {
+    display: flex;
+    margin-right: 2em;
+}
 .rate-box-with-credit-button a:hover {
     text-decoration: none;
 }
@@ -966,8 +989,6 @@ table.page-files tr.highlight td:not(:last-child) {
     border-radius: var(--ct_dim_rate-border-radius, 5px);
     box-shadow: 1px 1px 3px rgba(0 0 0 / 50%);
     display: inline-block;
-    margin-bottom: 10px;
-    margin-right: 2em;
 }
 .page-rate-widget-box .rate-points {
     background: var(--ct_col_rate-primary, #633) !important;
@@ -1038,9 +1059,9 @@ table.page-files tr.highlight td:not(:last-child) {
 }
  
 .rate-box-with-credit-button .creditButton {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
+    place-items: center;
     width: 24px;
     height: 16px;
     background-color: var(--ct_col_rate-primary, #633);
@@ -1051,8 +1072,6 @@ table.page-files tr.highlight td:not(:last-child) {
     font-size: 0.8em;
 }
 .creditButton a {
-    width: 24px;
-    margin-left: 0;
     border-left: none;
     font-size: 11px;
     color: var(--ct_col_rate-secondary, #fff6f0);
@@ -2208,10 +2227,8 @@ iframe.scpnet-interwiki-frame {
     width: 17em;
 }
 @media (min-width: 768px) {
-    iframe.scpnet-interwiki-frame {
-        width: 18em;
-    }
-    div.scpnet-interwiki-wrapper {
+    .scpnet-interwiki-frame,
+    .scpnet-interwiki-wrapper {
         width: 18em;
     }
 }
